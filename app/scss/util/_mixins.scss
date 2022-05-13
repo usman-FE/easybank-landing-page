@@ -1,0 +1,11 @@
+@use '../custom-bootstrap' as *;
+
+// TRANSITION
+@mixin transitions {
+  transition: all 0.3s ease-in-out;
+}
+
+// GRADIENT
+@mixin gradient {
+  background: linear-gradient(to right, $primary, $secondary);
+}

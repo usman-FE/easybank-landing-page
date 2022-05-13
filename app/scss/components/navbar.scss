@@ -1,0 +1,12 @@
+@use '../custom-bootstrap' as *;
+@use '../util' as *;
+
+.navbar {
+  font-size: 1.8rem;
+
+  @include media-breakpoint-up(lg) {
+    &__nav-link:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+}
