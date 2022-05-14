@@ -1,4 +1,4 @@
-@use '../custom-bootstrap' as *;
+@use "../custom-bootstrap" as *;
 
 // TRANSITION
 @mixin transitions {
@@ -8,4 +8,11 @@
 // GRADIENT
 @mixin gradient {
   background: linear-gradient(to right, $primary, $secondary);
+}
+
+// FLEX XENTER
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

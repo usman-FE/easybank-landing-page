@@ -20,4 +20,23 @@ $gray-900: #212529;
 $black: #000;
 // scss-docs-end gray-color-variables
 
+// CUSTOM COLORS
+$Grayish-Blue: hsl(233, 8%, 62%);
+$Light-Grayish-Blue: hsl(220, 16%, 96%);
+$Very-Light-Gray: hsl(0, 0%, 98%);
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1000px,
+  xxl: 1110px,
+);
+// scss-docs-end container-max-widths
+
+// MODAL
+$zindex-modal-backdrop: 1;
+$modal-dialog-margin: 2.5rem;
+
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";

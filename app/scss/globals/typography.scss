@@ -1,14 +1,41 @@
-@use '../util' as *;
+@use "../util" as *;
+@use "../custom-bootstrap" as *;
 
 h1,
 h2,
 h3 {
-	margin-top: 0;
-	line-height: 1.1;
+  margin-top: 0;
+  line-height: 1.1;
 }
 
 a,
 a:visited,
 a:active {
-	text-decoration: none;
+  text-decoration: none;
+}
+
+.navbar__nav-link {
+  font-weight: 400;
+}
+
+.display-1--bold {
+  color: $Dark-Blue;
+  font-weight: 400;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    text-align: left;
+  }
+}
+
+.para-info {
+  font-size: 1.52rem;
+  font-weight: 400;
+  color: $Grayish-Blue;
+  text-align: justify;
+
+  @include media-breakpoint-up(lg) {
+    text-align: left;
+    font-size: 1.8rem;
+  }
 }
