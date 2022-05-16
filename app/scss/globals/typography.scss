@@ -28,6 +28,12 @@ a:active {
   }
 }
 
+.services__card {
+  h3 {
+    color: $Dark-Blue;
+  }
+}
+
 .para-info {
   font-size: 1.52rem;
   font-weight: 400;
@@ -38,4 +44,9 @@ a:active {
     text-align: left;
     font-size: 1.8rem;
   }
+}
+
+.para-small {
+  font-size: 1.3rem;
+  color: $Grayish-Blue;
 }

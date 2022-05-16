@@ -1,0 +1,27 @@
+@use "../custom-bootstrap" as *;
+@use "../util" as *;
+
+.services {
+  background-color: $Light-Grayish-Blue;
+  padding: 10.1rem 0;
+  &__caption {
+    p {
+      margin-top: 3rem;
+    }
+  }
+
+  &__cards {
+    margin-top: 7rem;
+  }
+
+  &__card {
+    padding: 1rem;
+    h3 {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__icon {
+    margin-bottom: 4rem;
+  }
+}
