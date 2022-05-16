@@ -1,0 +1,99 @@
+@use '../custom-bootstrap' as *;
+@use '../util' as *;
+
+.footer {
+  background-color: $Dark-Blue;
+  padding: 4.5rem 0;
+
+  @include media-breakpoint-down(md) {
+    text-align: center;
+  }
+
+  &__logo-box {
+    margin-bottom: 5.4rem;
+  }
+
+  &__socials-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    @include media-breakpoint-down(md) {
+      justify-content: center;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__socials-item:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  &__socials-icon {
+    display: block;
+    background-color: $white;
+    height: 2rem;
+    width: 2rem;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    @include transitions;
+
+    &:hover {
+      background-color: $primary;
+    }
+  }
+
+  &__link-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__link-item {
+    margin-bottom: 1.5rem;
+  }
+
+  &__link {
+    font-size: 1.5rem;
+    color: $white;
+    @include transitions;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  &__copy-text {
+    font-size: 1.5rem;
+    color: $Grayish-Blue;
+  }
+
+  &__cta-box {
+    text-align: end;
+
+    @include media-breakpoint-down(md) {
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }
+
+  &__cta {
+    margin-bottom: 3rem;
+  }
+}
+
+.facebook {
+  mask-image: url('../images/icon-facebook.svg');
+}
+.youtube {
+  mask-image: url('../images/icon-youtube.svg');
+}
+.twitter {
+  mask-image: url('../images/icon-twitter.svg');
+}
+.pinterest {
+  mask-image: url('../images/icon-pinterest.svg');
+}
+.instagram {
+  mask-image: url('../images/icon-instagram.svg');
+}

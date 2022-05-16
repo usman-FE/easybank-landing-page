@@ -1,8 +1,9 @@
-@use "../custom-bootstrap" as *;
-@use "../util" as *;
+@use '../custom-bootstrap' as *;
+@use '../util' as *;
 
 body {
   overflow-x: hidden;
+  position: relative;
 }
 
 .hero-section {
@@ -29,13 +30,13 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: url("../images/bg-intro-desktop.svg");
+    background-image: url('../images/bg-intro-desktop.svg');
     background-size: 100%;
     background-position: center 58%;
     left: 41%;
 
     @include media-breakpoint-down(md) {
-      background-image: url("../images/bg-intro-mobile.svg");
+      background-image: url('../images/bg-intro-mobile.svg');
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: center center;
@@ -44,11 +45,11 @@ body {
     }
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       height: 160%;
       width: 100%;
-      background-image: url("../images/image-mockups.webp");
+      background-image: url('../images/image-mockups.webp');
       background-position-x: 30%;
       background-repeat: no-repeat;
       background-size: 55%;

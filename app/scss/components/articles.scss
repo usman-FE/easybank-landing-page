@@ -1,5 +1,5 @@
-@use "../custom-bootstrap" as *;
-@use "../util" as *;
+@use '../custom-bootstrap' as *;
+@use '../util' as *;
 
 .articles {
   background-color: $Very-Light-Gray;
@@ -8,6 +8,10 @@
 
   &__heading {
     margin-bottom: 5.7rem;
+
+    @include media-breakpoint-down(md) {
+      text-align: center;
+    }
   }
   .card {
     overflow: hidden;
