@@ -1,0 +1,52 @@
+@use "../custom-bootstrap" as *;
+@use "../util" as *;
+
+.articles {
+  background-color: $Very-Light-Gray;
+  padding-top: 9.2rem;
+  padding-bottom: 7.8rem;
+
+  &__heading {
+    margin-bottom: 5.7rem;
+  }
+  .card {
+    overflow: hidden;
+    max-width: 25.7rem;
+    border: none;
+
+    &-body {
+      padding-left: 1.8rem;
+      padding-right: 1.8rem;
+      padding-bottom: 2.5rem;
+    }
+
+    &-caption {
+      font-size: 1rem;
+      color: $Grayish-Blue;
+      margin-top: 2.5rem;
+    }
+
+    &-title {
+      a {
+        color: $Dark-Blue;
+        font-size: 1.8rem;
+        @include transitions;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+
+    &-text {
+      color: $Grayish-Blue;
+      margin-top: 1rem;
+      font-size: 1.3rem;
+    }
+  }
+  .card-img-top {
+    display: block;
+    height: 20rem;
+    object-fit: cover;
+  }
+}
