@@ -38,5 +38,11 @@ $container-max-widths: (
 // MODAL
 $zindex-modal-backdrop: 1;
 $modal-dialog-margin: 2.5rem;
+$modal-backdrop-bg: linear-gradient(
+  to bottom,
+  $Dark-Blue 70%,
+  $Very-Light-Gray
+);
+$modal-backdrop-opacity: 0.7;
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";

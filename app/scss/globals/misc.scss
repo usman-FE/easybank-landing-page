@@ -27,3 +27,29 @@
     font-size: 1.8rem;
   }
 }
+
+.navbar-toggler {
+  position: relative;
+  outline: none;
+  border: none;
+  z-index: 999999;
+}
+
+// TOGGLER ICON
+.toggler-icon {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hamburger {
+  background-image: url("../images/icon-hamburger.svg");
+  height: 11px;
+  width: 24px;
+}
+
+.close {
+  background-image: url("../images/icon-close.svg");
+  width: 18px;
+  height: 19px;
+}

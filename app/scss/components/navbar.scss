@@ -4,14 +4,23 @@
 .modal-dialog {
   margin-top: 8rem !important;
 }
+.modal-backdrop {
+  top: 5rem !important;
+}
+.modal-body {
+  padding: 3.3rem !important;
+
+  .navbar__nav-link {
+    color: $Dark-Blue !important;
+  }
+}
 
 .navbar {
   font-size: 1.5rem;
   z-index: 11;
 
-  &__nav-link {
+  &__nav-link:not(:last-child) {
     margin-bottom: 1rem;
-    color: $Dark-Blue;
   }
 
   @include media-breakpoint-up(lg) {
@@ -19,7 +28,7 @@
       margin-right: 3rem;
     }
     &__nav-link {
-      margin-bottom: 0rem;
+      margin-bottom: 0rem !important;
       position: relative;
 
       &:hover {
