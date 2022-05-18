@@ -90,6 +90,15 @@ function watchTask() {
   );
 }
 
+exports.build = series(
+  copyHTML,
+  copybootstrap,
+  scssTask,
+  jsTask,
+  imageOptimize,
+  webpImage
+);
+
 // Default Gulp Task
 exports.default = series(
   copyHTML,
